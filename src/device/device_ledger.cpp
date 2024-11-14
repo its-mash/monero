@@ -624,7 +624,8 @@ namespace hw {
           MDEBUG("Have Not view key");
           this->has_view_key = false;
         } else {
-          MDEBUG("Have view key");
+          MDEBUG("Have view key :");
+          log_hexbuffer("DBG ViewKey:", this->viewkey.data, 32);
           this->has_view_key = true;
         }
       
